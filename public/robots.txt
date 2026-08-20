@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-User-agent: Googlebot
-Disallow: /
+Sitemap: https://www.nicoletrc.com/sitemap.xml
