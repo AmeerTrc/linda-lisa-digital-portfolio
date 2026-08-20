@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
+import "./demos.css";
 export const metadata:Metadata={
  title:"NicoleTrc — Client Relations & Business Development",
  description:"Nicole Costa supports client relations and business development at AmeerTrc in São Paulo.",
