@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const languages = ["pt", "en"] as const;
+  const lastModified = new Date("2026-08-21T00:00:00-03:00");
   return languages.map((lang) => ({
       url: `https://www.nicoletrc.com/${lang}`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
       priority: 1,
       alternates: {
