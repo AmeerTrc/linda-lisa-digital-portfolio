@@ -11,6 +11,7 @@ const content = {
       "Conceito digital premium criado para apresentar uma nova presença online ao proprietário do Majestoso.",
       "Experiência web conceitual desenvolvida para demonstrar o potencial digital do Charme da Paulista.",
       "Projeto de apresentação inspirado na história e na presença cultural do Bar Brahma em São Paulo.",
+      "Conceito digital sofisticado criado para apresentar uma presença online profissional a um escritório de advocacia criminal em São Paulo.",
     ],
   },
   en: {
@@ -23,6 +24,7 @@ const content = {
       "A premium digital concept created to present a new online presence to the owner of Majestoso.",
       "A conceptual web experience developed to demonstrate the digital potential of Charme da Paulista.",
       "A presentation project inspired by the history and cultural presence of Bar Brahma in São Paulo.",
+      "A sophisticated digital concept created to present a professional online presence for a criminal law firm in São Paulo.",
     ],
   },
 };
@@ -31,6 +33,7 @@ const projects = [
   { name: "Majestoso", image: "/majestoso-demo.jpg", url: "https://majestoso-demo-production.up.railway.app/" },
   { name: "Charme da Paulista", image: "/charme-da-paulista-demo.jpg", url: "https://charme-da-paulista-production-d477.up.railway.app/?lang=pt" },
   { name: "Bar Brahma", image: "/bar-brahma-demo.jpg", url: "https://bar-brahma-demo-production.up.railway.app/" },
+  { name: "Almeida e Matos", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://escrit-riodeadvocacia-production.up.railway.app/", url: "https://escrit-riodeadvocacia-production.up.railway.app/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
@@ -41,7 +44,7 @@ export default function DemoSection({ lang }: { lang: Lang }) {
     <div className="demo-heading">
       <p className="kicker">{t.label}</p>
       <h2>{t.title}</h2>
-      <div className="demo-disclaimer"><span>03</span><p>{t.note}</p></div>
+      <div className="demo-disclaimer"><span>04</span><p>{t.note}</p></div>
     </div>
     <div className="demo-grid">
       {projects.map((project, index) => <a className="demo-card" href={project.url} target="_blank" rel="noreferrer" key={project.name} aria-label={`${t.open}: ${project.name}`}>
