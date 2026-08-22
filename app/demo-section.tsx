@@ -12,6 +12,7 @@ const content = {
       "Experiência web conceitual desenvolvida para demonstrar o potencial digital do Charme da Paulista.",
       "Projeto de apresentação inspirado na história e na presença cultural do Bar Brahma em São Paulo.",
       "Conceito digital sofisticado criado para apresentar uma presença online profissional a um escritório de advocacia criminal em São Paulo.",
+      "Experiência gastronômica digital criada para apresentar os sabores, a história e a atmosfera italiana contemporânea do Gusto Cucina Itaim.",
     ],
   },
   en: {
@@ -25,6 +26,7 @@ const content = {
       "A conceptual web experience developed to demonstrate the digital potential of Charme da Paulista.",
       "A presentation project inspired by the history and cultural presence of Bar Brahma in São Paulo.",
       "A sophisticated digital concept created to present a professional online presence for a criminal law firm in São Paulo.",
+      "A digital dining experience created to showcase the flavors, history and contemporary Italian atmosphere of Gusto Cucina Itaim.",
     ],
   },
 };
@@ -34,6 +36,7 @@ const projects = [
   { name: "Charme da Paulista", image: "/charme-da-paulista-demo.jpg", url: "https://charme-da-paulista-production-d477.up.railway.app/?lang=pt" },
   { name: "Bar Brahma", image: "/bar-brahma-demo.jpg", url: "https://bar-brahma-demo-production.up.railway.app/" },
   { name: "Almeida e Matos", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://escrit-riodeadvocacia-production.up.railway.app/", url: "https://escrit-riodeadvocacia-production.up.railway.app/" },
+  { name: "Gusto Cucina Itaim", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://gustocucinataim1-production.up.railway.app/", url: "https://gustocucinataim1-production.up.railway.app/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
@@ -44,7 +47,7 @@ export default function DemoSection({ lang }: { lang: Lang }) {
     <div className="demo-heading">
       <p className="kicker">{t.label}</p>
       <h2>{t.title}</h2>
-      <div className="demo-disclaimer"><span>04</span><p>{t.note}</p></div>
+      <div className="demo-disclaimer"><span>{String(projects.length).padStart(2, "0")}</span><p>{t.note}</p></div>
     </div>
     <div className="demo-grid">
       {projects.map((project, index) => <a className="demo-card" href={project.url} target="_blank" rel="noreferrer" key={project.name} aria-label={`${t.open}: ${project.name}`}>
