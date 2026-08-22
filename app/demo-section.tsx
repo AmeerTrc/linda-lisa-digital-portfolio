@@ -15,7 +15,7 @@ const content = {
       "Projeto de apresentação inspirado na história e na presença cultural do Bar Brahma em São Paulo.",
       "Conceito digital sofisticado criado para apresentar uma presença online profissional a um escritório de advocacia criminal em São Paulo.",
       "Experiência gastronômica digital criada para apresentar os sabores, a história e a atmosfera italiana contemporânea do Gusto Cucina Itaim.",
-      "Landing page conceitual premium para restaurante, com identidade visual própria inspirada em São Paulo, Tatuapé, grill e bar.",
+      "Landing page conceitual premium para restaurante, com identidade visual própria inspirada em São Paulo, Tatuapé, grill e bar.",\n      "Experiência digital premium criada para apresentar o Praia da Tiquatira como um Beach Club completo dentro de São Paulo.",
     ],
   },
   en: {
@@ -32,7 +32,7 @@ const content = {
       "A presentation project inspired by the history and cultural presence of Bar Brahma in São Paulo.",
       "A sophisticated digital concept created to present a professional online presence for a criminal law firm in São Paulo.",
       "A digital dining experience created to showcase the flavors, history and contemporary Italian atmosphere of Gusto Cucina Itaim.",
-      "A premium conceptual restaurant landing page with an original visual identity inspired by São Paulo, Tatuapé, grill and bar culture.",
+      "A premium conceptual restaurant landing page with an original visual identity inspired by São Paulo, Tatuapé, grill and bar culture.",\n      "A premium digital experience created to present Praia da Tiquatira as a complete Beach Club destination inside São Paulo.",
     ],
   },
 };
@@ -43,7 +43,7 @@ const projects = [
   { name: "Bar Brahma", image: "/bar-brahma-demo.jpg", url: "https://bar-brahma-demo-production.up.railway.app/" },
   { name: "Almeida e Matos", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://escrit-riodeadvocacia-production.up.railway.app/", url: "https://escrit-riodeadvocacia-production.up.railway.app/" },
   { name: "Gusto Cucina Itaim", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://gustocucinataim1-production.up.railway.app/", url: "https://gustocucinataim1-production.up.railway.app/" },
-  { name: "Serras Bar e Grill Tatuapé", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://serras-bar-grill-tatuape-demo-production.up.railway.app/", url: "https://serras-bar-grill-tatuape-demo-production.up.railway.app/" },
+  { name: "Serras Bar e Grill Tatuapé", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://serras-bar-grill-tatuape-demo-production.up.railway.app/", url: "https://serras-bar-grill-tatuape-demo-production.up.railway.app/" },\n  { name: "Praia da Tiquatira Beach Club", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://praia-tiquatira-demo-production.up.railway.app/", url: "https://praia-tiquatira-demo-production.up.railway.app/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
