@@ -1,5 +1,5 @@
-# NicoleTrc Digital Portfolio
+# Linda Lisa Digital Portfolio
 
-Bilingual Portuguese/English professional portfolio for **Nicole Costa**, Business Development and Client Relations Assistant at **AmeerTrc**.
+Bilingual Portuguese/English professional portfolio for **Linda Lisa**, Business Development and Client Relations Assistant at **AmeerTrc**.
 
-Search indexing is intentionally disabled until the future `NicoleTrc.com` domain and final content are approved.
+Hosted on Railway and connected to Ameer Mustafa's digital portfolio.

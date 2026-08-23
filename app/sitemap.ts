@@ -2,16 +2,17 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const languages = ["pt", "en"] as const;
-  const lastModified = new Date("2026-08-21T00:00:00-03:00");
+  const siteUrl = process.env.RAILWAY_PUBLIC_DOMAIN ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}` : "https://linda-lisa-digital-portfolio-production.up.railway.app";
+  const lastModified = new Date("2026-08-23T00:00:00-03:00");
   return languages.map((lang) => ({
-      url: `https://www.nicoletrc.com/${lang}`,
+      url: `${siteUrl}/${lang}`,
       lastModified,
       changeFrequency: "monthly",
       priority: 1,
       alternates: {
         languages: {
-          "pt-BR": "https://www.nicoletrc.com/pt",
-          en: "https://www.nicoletrc.com/en",
+          "pt-BR": `${siteUrl}/pt`,
+          en: `${siteUrl}/en`,
         },
       },
     }));

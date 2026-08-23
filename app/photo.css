@@ -1,4 +1,3 @@
-.portrait-card{position:relative;isolation:isolate;overflow:hidden;background-image:linear-gradient(180deg,#07100920 25%,#071009b8 100%),url('/nicole-costa.jpg');background-size:cover;background-position:center 18%;box-shadow:0 40px 120px #000b,inset 0 0 0 1px #ffffff15}
+.portrait-card{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 72% 22%,#45e36b38,transparent 36%),linear-gradient(145deg,#18271c,#090d0a 72%);box-shadow:0 40px 120px #000b,inset 0 0 0 1px #ffffff15}
 .portrait-card:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(135deg,transparent 45%,#45e36b18);pointer-events:none}
-.portrait-card span,.portrait-card i{position:relative;z-index:2;text-shadow:0 2px 18px #000}.portrait-card span{color:#d6ffdf}.portrait-card i{color:#fff}.portrait-card b{opacity:0}
-@media(max-width:620px){.portrait-card{background-position:center 16%}}
+.portrait-card span,.portrait-card i,.portrait-card b{position:relative;z-index:2;text-shadow:0 2px 18px #000}.portrait-card span{color:#d6ffdf}.portrait-card i{color:#fff}.portrait-card b{opacity:1;color:#45e36b;font-family:Georgia,"Times New Roman",serif}
