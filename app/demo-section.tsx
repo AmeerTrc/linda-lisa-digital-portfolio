@@ -17,6 +17,7 @@ const content = {
       "Experiência gastronômica digital criada para apresentar os sabores, a história e a atmosfera italiana contemporânea do Gusto Cucina Itaim.",
       "Landing page conceitual premium para restaurante, com identidade visual própria inspirada em São Paulo, Tatuapé, grill e bar.",
       "Experiência digital premium criada para apresentar o Praia da Tiquatira como um Beach Club completo dentro de São Paulo.",
+      "Experiência digital interativa criada para apresentar a tradição boêmia, o cardápio na lousa e os pastéis artesanais do lendário Bar do Giba em Moema.",
     ],
   },
   en: {
@@ -35,6 +36,7 @@ const content = {
       "A digital dining experience created to showcase the flavors, history and contemporary Italian atmosphere of Gusto Cucina Itaim.",
       "A premium conceptual restaurant landing page with an original visual identity inspired by São Paulo, Tatuapé, grill and bar culture.",
       "A premium digital experience created to present Praia da Tiquatira as a complete Beach Club destination inside São Paulo.",
+      "An interactive digital dining experience created to showcase the bohemian heritage, chalkboard menu, and legendary artisan pastéis of Bar do Giba in Moema.",
     ],
   },
 };
@@ -47,6 +49,7 @@ const projects = [
   { name: "Gusto Cucina Itaim", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://gustocucinataim1-production.up.railway.app/", url: "https://gustocucinataim1-production.up.railway.app/" },
   { name: "Serras Bar e Grill Tatuapé", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://serras-bar-grill-tatuape-demo-production.up.railway.app/", url: "https://serras-bar-grill-tatuape-demo-production.up.railway.app/" },
   { name: "Praia da Tiquatira Beach Club", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://praia-tiquatira-demo-production.up.railway.app/", url: "https://praia-tiquatira-demo-production.up.railway.app/" },
+  { name: "Bar do Giba", image: "/bar-do-giba-demo.jpg", url: "https://bar-do-giba-production.up.railway.app/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
