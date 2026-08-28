@@ -18,6 +18,7 @@ const content = {
       "Landing page conceitual premium para restaurante, com identidade visual própria inspirada em São Paulo, Tatuapé, grill e bar.",
       "Experiência digital premium criada para apresentar o Praia da Tiquatira como um Beach Club completo dentro de São Paulo.",
       "Experiência digital interativa criada para apresentar a tradição boêmia, o cardápio na lousa e os pastéis artesanais do lendário Bar do Giba em Moema.",
+      "Experiência digital japonesa criada para apresentar o rodízio, os combinados e a atmosfera acolhedora do Toshiro Sushi em Santa Cecília.",
     ],
   },
   en: {
@@ -37,6 +38,7 @@ const content = {
       "A premium conceptual restaurant landing page with an original visual identity inspired by São Paulo, Tatuapé, grill and bar culture.",
       "A premium digital experience created to present Praia da Tiquatira as a complete Beach Club destination inside São Paulo.",
       "An interactive digital dining experience created to showcase the bohemian heritage, chalkboard menu, and legendary artisan pastéis of Bar do Giba in Moema.",
+      "A Japanese dining experience created to showcase the rodízio, sushi selections and welcoming atmosphere of Toshiro Sushi in Santa Cecília.",
     ],
   },
 };
@@ -50,6 +52,7 @@ const projects = [
   { name: "Serras Bar e Grill Tatuapé", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://serras-bar-grill-tatuape-demo-production.up.railway.app/", url: "https://serras-bar-grill-tatuape-demo-production.up.railway.app/" },
   { name: "Praia da Tiquatira Beach Club", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://praia-tiquatira-demo-production.up.railway.app/", url: "https://praia-tiquatira-demo-production.up.railway.app/" },
   { name: "Bar do Giba", image: "/bar-do-giba-demo.jpg", url: "https://bar-do-giba-production.up.railway.app/" },
+  { name: "Toshiro Sushi — Santa Cecília", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://toshiro-sushi-demo.ameer-trc.chatgpt.site/", url: "https://toshiro-sushi-demo.ameer-trc.chatgpt.site/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
