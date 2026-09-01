@@ -3,27 +3,14 @@ import { notFound } from "next/navigation";
 import Home from "../home";
 
 const languages = ["pt", "en"] as const;
-const siteUrl = process.env.RAILWAY_PUBLIC_DOMAIN ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}` : "https://linda-lisa-digital-portfolio-production.up.railway.app";
 type Lang = (typeof languages)[number];
 
 const seo = {
-  pt: {
-    title: "Linda Lisa — Relacionamento com Clientes | LindaLisa",
-    description: "Linda Lisa atua no relacionamento com clientes e desenvolvimento de negócios na AmeerTrc em São Paulo.",
-    locale: "pt_BR",
-    role: "Relacionamento com Clientes e Desenvolvimento de Negócios",
-  },
-  en: {
-    title: "Linda Lisa — Client Relations | LindaLisa",
-    description: "Linda Lisa supports client relations and business development at AmeerTrc in São Paulo.",
-    locale: "en_US",
-    role: "Client Relations and Business Development",
-  },
-} satisfies Record<Lang, { title: string; description: string; locale: string; role: string }>;
+  pt: { title: "Desconhecido", description: "Desconhecido", locale: "pt_BR" },
+  en: { title: "Unknown", description: "Unknown", locale: "en_US" },
+} satisfies Record<Lang, { title: string; description: string; locale: string }>;
 
-export function generateStaticParams() {
-  return languages.map((lang) => ({ lang }));
-}
+export function generateStaticParams() { return languages.map((lang) => ({ lang })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
@@ -32,66 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return {
     title: current.title,
     description: current.description,
-    alternates: {
-      canonical: `/${lang}`,
-      languages: { "pt-BR": "/pt", en: "/en", "x-default": "/pt" },
-    },
-    openGraph: {
-      title: current.title,
-      description: current.description,
-      url: `${siteUrl}/${lang}`,
-      siteName: "LindaLisa",
-      type: "profile",
-      locale: current.locale,
-    },
+    robots: { index: false, follow: false },
+    alternates: { canonical: `/${lang}`, languages: { "pt-BR": "/pt", en: "/en", "x-default": "/pt" } },
+    openGraph: { title: current.title, description: current.description, type: "website", locale: current.locale },
   };
 }
 
 export default async function LanguagePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!languages.includes(lang as Lang)) notFound();
-  const current = seo[lang as Lang];
-  const pageUrl = `${siteUrl}/${lang}`;
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${siteUrl}/#website`,
-        url: `${siteUrl}/`,
-        name: "LindaLisa",
-        inLanguage: ["pt-BR", "en"],
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://www.ameertrc.com/#organization",
-        name: "AmeerTrc",
-        url: "https://www.ameertrc.com/",
-      },
-      {
-        "@type": "Person",
-        "@id": `${siteUrl}/#linda-lisa`,
-        name: "Linda Lisa",
-        url: pageUrl,
-        jobTitle: current.role,
-        worksFor: { "@id": "https://www.ameertrc.com/#organization" },
-        sameAs: ["https://www.instagram.com/ameer_trc"],
-        address: { "@type": "PostalAddress", addressLocality: "São Paulo", addressCountry: "BR" },
-      },
-      {
-        "@type": "ProfilePage",
-        "@id": `${pageUrl}#profile`,
-        url: pageUrl,
-        name: current.title,
-        description: current.description,
-        inLanguage: lang === "pt" ? "pt-BR" : "en",
-        mainEntity: { "@id": `${siteUrl}/#linda-lisa` },
-        isPartOf: { "@id": `${siteUrl}/#website` },
-      },
-    ],
-  };
-  return <>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
-    <Home initialLang={lang as Lang} />
-  </>;
+  return <Home initialLang={lang as Lang} />;
 }
