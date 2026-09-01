@@ -1,5 +1,5 @@
-# Archived profile
+# Desconhecido Digital Portfolio
 
-The former personal profile has been anonymized.
+Bilingual Portuguese/English professional portfolio for **Desconhecido**, Business Development and Client Relations Assistant at **AmeerTrc**.
 
 Hosted on Railway and connected to Ameer Mustafa's digital portfolio.
