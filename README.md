@@ -1,5 +1,5 @@
-# Linda Lisa Digital Portfolio
+# Archived profile
 
-Bilingual Portuguese/English professional portfolio for **Linda Lisa**, Business Development and Client Relations Assistant at **AmeerTrc**.
+The former personal profile has been anonymized.
 
 Hosted on Railway and connected to Ameer Mustafa's digital portfolio.
