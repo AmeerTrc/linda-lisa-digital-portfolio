@@ -19,6 +19,7 @@ const content = {
       "Experiência digital premium criada para apresentar o Praia da Tiquatira como um Beach Club completo dentro de São Paulo.",
       "Experiência digital interativa criada para apresentar a tradição boêmia, o cardápio na lousa e os pastéis artesanais do lendário Bar do Giba em Moema.",
       "Experiência digital japonesa criada para apresentar o rodízio, os combinados e a atmosfera acolhedora do Toshiro Sushi em Santa Cecília.",
+      "Experiência gastronômica síria autêntica criada para apresentar os shawarmas nobres de carne e frango, os doces artesanais e a tradição do Aboud Síria no Centro Histórico de São Paulo.",
     ],
   },
   en: {
@@ -39,6 +40,7 @@ const content = {
       "A premium digital experience created to present Praia da Tiquatira as a complete Beach Club destination inside São Paulo.",
       "An interactive digital dining experience created to showcase the bohemian heritage, chalkboard menu, and legendary artisan pastéis of Bar do Giba in Moema.",
       "A Japanese dining experience created to showcase the rodízio, sushi selections and welcoming atmosphere of Toshiro Sushi in Santa Cecília.",
+      "An authentic Syrian digital dining experience created to showcase the flame-roasted beef and chicken shawarmas, handcrafted baklavas, and heritage of Aboud Síria in the Historic Center of São Paulo.",
     ],
   },
 };
@@ -53,6 +55,7 @@ const projects = [
   { name: "Praia da Tiquatira Beach Club", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://praia-tiquatira-demo-production.up.railway.app/", url: "https://praia-tiquatira-demo-production.up.railway.app/" },
   { name: "Bar do Giba", image: "/bar-do-giba-demo.jpg", url: "https://bar-do-giba-production.up.railway.app/" },
   { name: "Toshiro Sushi — Santa Cecília", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://toshiro-sushi-deo-production.up.railway.app/", url: "https://toshiro-sushi-deo-production.up.railway.app/" },
+  { name: "Aboud Síria", image: "/aboud-siria-demo.jpg", url: "https://aboud-siria-production.up.railway.app/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
@@ -72,7 +75,7 @@ export default function DemoSection({ lang }: { lang: Lang }) {
           <span>{t.badge}</span>
         </div>
         <div className="demo-copy">
-          <small>0{index + 1}</small>
+          <small>{String(index + 1).padStart(2, "0")}</small>
           <h3>{project.name}</h3>
           <p>{t.descriptions[index]}</p>
           <b>{t.open}<Arrow /></b>
