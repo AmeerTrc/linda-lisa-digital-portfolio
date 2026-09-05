@@ -49,7 +49,7 @@ const projects = [
   { name: "Majestoso", image: "/majestoso-demo.jpg", url: "https://majestoso-demo-production.up.railway.app/" },
   { name: "Charme da Paulista", image: "/charme-da-paulista-demo.jpg", url: "https://charme-da-paulista-production-d477.up.railway.app/?lang=pt" },
   { name: "Bar Brahma", image: "/bar-brahma-demo.jpg", url: "https://bar-brahma-demo-production.up.railway.app/" },
-  { name: "Almeida e Matos", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://escrit-riodeadvocacia-production.up.railway.app/", url: "https://escrit-riodeadvocacia-production.up.railway.app/" },
+  { name: "Escritório de Advocacia", image: "/escritorio-demo.jpg", url: "https://escrit-riodeadvocacia-production.up.railway.app/" },
   { name: "Gusto Cucina Itaim", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://gustocucinataim1-production.up.railway.app/", url: "https://gustocucinataim1-production.up.railway.app/" },
   { name: "Serras Bar e Grill Tatuapé", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://serras-bar-grill-tatuape-demo-production.up.railway.app/", url: "https://serras-bar-grill-tatuape-demo-production.up.railway.app/" },
   { name: "Praia da Tiquatira Beach Club", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://praia-tiquatira-demo-production.up.railway.app/", url: "https://praia-tiquatira-demo-production.up.railway.app/" },
