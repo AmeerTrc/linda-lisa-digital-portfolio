@@ -21,6 +21,7 @@ const content = {
       "Experiência digital japonesa criada para apresentar o rodízio, os combinados e a atmosfera acolhedora do Toshiro Sushi em Santa Cecília.",
       "Experiência gastronômica síria autêntica criada para apresentar os shawarmas nobres de carne e frango, os doces artesanais e a tradição do Aboud Síria no Centro Histórico de São Paulo.",
       "Experiência gastronômica tradicional criada para apresentar a autêntica comidaria e churrascaria do Churrasqueto República no Centro de São Paulo.",
+      "Experiência gastronômica tradicional criada para apresentar a autêntica comidaria e pratos artesanais de arroz do Conceição Discos na Vila Buarque.",
     ],
   },
   en: {
@@ -43,6 +44,7 @@ const content = {
       "A Japanese dining experience created to showcase the rodízio, sushi selections and welcoming atmosphere of Toshiro Sushi in Santa Cecília.",
       "An authentic Syrian digital dining experience created to showcase the flame-roasted beef and chicken shawarmas, handcrafted baklavas, and heritage of Aboud Síria in the Historic Center of São Paulo.",
       "A traditional dining experience created to showcase the authentic steakhouse and traditional cuisine of Churrasqueto República in Downtown São Paulo.",
+      "A traditional dining experience created to showcase the authentic comfort food and signature rice dishes of Conceição Discos in Vila Buarque.",
     ],
   },
 };
@@ -59,6 +61,7 @@ const projects = [
   { name: "Toshiro Sushi — Santa Cecília", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://toshiro-sushi-deo-production.up.railway.app/", url: "https://toshiro-sushi-deo-production.up.railway.app/" },
   { name: "Aboud Síria", image: "/aboud-siria-demo.jpg", url: "https://abudi-shawarma-production.up.railway.app/" },
   { name: "Churrasqueto República", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://churrasqueto-rep-blica-production.up.railway.app/", url: "https://churrasqueto-rep-blica-production.up.railway.app/" },
+  { name: "Conceição Discos & Comes", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://conceicao-discos-demo-production.up.railway.app/", url: "https://conceicao-discos-demo-production.up.railway.app/" },
 ];
 
 const Arrow = () => <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>;
