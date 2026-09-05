@@ -60,22 +60,18 @@ nav a:hover{color:var(--green)}
 .work-head{display:flex;align-items:center;gap:45px;margin-bottom:48px}
 .work-head h2{margin:0;font:400 clamp(2.6rem,4vw,4.4rem) var(--serif);white-space:nowrap}
 .work-head i{height:1px;background:var(--line);flex:1}
-.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px;width:100%}
-.project{overflow:hidden;border-radius:12px;background:#111411;border:1px solid var(--line);transition:.3s;display:flex;flex-direction:column}
-.project:hover{transform:translateY(-7px);border-color:#44e36b75;box-shadow:0 24px 60px #0008}
-.project-art{position:relative;aspect-ratio:16/10;height:auto;min-height:220px;padding:clamp(20px,2.5vw,34px);display:flex;align-items:end;overflow:hidden}
-.project-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#090b0a,transparent 60%)}
-.project-art strong{position:relative;z-index:2;font:400 clamp(1.6rem,2.2vw,2.35rem)/1.05 var(--serif)}
-.p0 .project-art{background:radial-gradient(circle at 76% 20%,#213e6b,#10141b 58%)}
-.p1 .project-art{background:radial-gradient(circle at 75% 20%,#7d2b5c,#181018 58%)}
-.lomraxe,.amora{position:absolute;top:38px;left:34px;z-index:2;letter-spacing:.2em;color:#74b7ff}
-.amora{color:#ff72bd}
-.project-copy{padding:clamp(20px,2.5vw,32px);flex:1;display:flex;flex-direction:column}
-.project-copy span{color:var(--green);font-size:.62rem;text-transform:uppercase;letter-spacing:.18em}
-.project-copy h3{margin:12px 0 10px;font:400 clamp(1.3rem,1.7vw,1.6rem) var(--serif)}
-.project-copy p{margin:0;color:var(--muted);line-height:1.55;font-size:.86rem;flex:1}
-.project-link{display:inline-flex;align-items:center;gap:9px;margin-top:clamp(16px,2vw,24px);color:var(--green);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
-.project-link svg{width:17px}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(20px,2.5vw,32px);width:100%}
+.project{overflow:hidden;border-radius:14px;background:#111411;border:1px solid var(--line);transition:transform .28s,border-color .28s,box-shadow .28s;display:flex;flex-direction:column;width:100%}
+.project:hover{transform:translateY(-6px);border-color:#45e36b88;box-shadow:0 24px 65px #0009}
+.project-art{position:relative;aspect-ratio:16/10;width:100%;min-height:220px;overflow:hidden;background:#080a09}
+.project-preview{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:top;transition:transform .55s}
+.project:hover .project-preview{transform:scale(1.035)}
+.project-copy{padding:clamp(20px,2.5vw,28px);display:flex;flex-direction:column;flex:1}
+.project-copy .project-badge{display:inline-block;align-self:flex-start;padding:4px 10px;border-radius:99px;background:rgba(69,227,107,.12);border:1px solid rgba(69,227,107,.3);color:var(--green);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.project-copy h3{margin:0 0 10px;font:400 clamp(1.35rem,1.8vw,1.7rem) var(--serif);color:var(--paper)}
+.project-copy p{margin:0 0 16px;color:var(--muted);font-size:clamp(.82rem,.92vw,.86rem);line-height:1.65;flex:1}
+.project-copy .project-action{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:clamp(12px,1.5vw,18px);border-top:1px solid var(--line);color:var(--green);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;font-weight:700}
+.project-copy .project-action svg{width:17px;height:17px}
 .about{background:var(--paper);color:#111411}
 .about .kicker{color:#1ba848}
 .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,90px)}
