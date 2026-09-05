@@ -53,7 +53,7 @@ const projects = [
   { name: "Gusto Cucina Itaim", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://gustocucinataim1-production.up.railway.app/", url: "https://gustocucinataim1-production.up.railway.app/" },
   { name: "Serras Bar e Grill Tatuapé", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://serras-bar-grill-tatuape-demo-production.up.railway.app/", url: "https://serras-bar-grill-tatuape-demo-production.up.railway.app/" },
   { name: "Praia da Tiquatira Beach Club", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://praia-tiquatira-demo-production.up.railway.app/", url: "https://praia-tiquatira-demo-production.up.railway.app/" },
-  { name: "Bar do Giba", image: "/bar-do-giba-demo.jpg", url: "https://bar-do-giba-production.up.railway.app/" },
+  { name: "Bar do Giba", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://bar-do-giba-production.up.railway.app/", url: "https://bar-do-giba-production.up.railway.app/" },
   { name: "Toshiro Sushi — Santa Cecília", image: "https://image.thum.io/get/width/1200/crop/760/noanimate/https://toshiro-sushi-deo-production.up.railway.app/", url: "https://toshiro-sushi-deo-production.up.railway.app/" },
   { name: "Aboud Síria", image: "/aboud-siria-demo.jpg", url: "https://abudi-shawarma-production.up.railway.app/" },
 ];
