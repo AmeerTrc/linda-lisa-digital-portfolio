@@ -10,15 +10,15 @@
 .demo-card:hover{transform:translateY(-7px);border-color:#45e36b88;box-shadow:0 26px 70px #0009}
 .demo-card:focus-visible{outline:2px solid var(--green);outline-offset:4px}
 .demo-image{position:relative;aspect-ratio:16/10;width:100%;height:auto;min-height:200px;overflow:hidden;background:#080a09}
-.demo-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#080a09aa,transparent 65%);pointer-events:none}
 .demo-image img{width:100%;height:100%;display:block;object-fit:cover;object-position:top;transition:transform .55s}
 .demo-card:hover .demo-image img{transform:scale(1.035)}
-.demo-image span{position:absolute;z-index:2;left:18px;bottom:16px;padding:6px 10px;border:1px solid #ffffff38;border-radius:99px;background:#080a09cc;color:#dce0da;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(8px)}
 .demo-copy{padding:clamp(20px,2.5vw,28px);display:flex;flex-direction:column;flex:1}
-.demo-copy small{color:var(--green);font-size:.62rem;letter-spacing:.15em}
-.demo-copy h3{margin:10px 0 8px;font:400 clamp(1.35rem,1.8vw,1.7rem) var(--serif)}
-.demo-copy p{min-height:0;margin:0;color:var(--muted);font-size:clamp(.8rem,.92vw,.84rem);line-height:1.65;flex:1}
-.demo-copy b{display:flex;align-items:center;justify-content:space-between;margin-top:clamp(16px,2vw,24px);padding-top:clamp(12px,1.5vw,18px);border-top:1px solid var(--line);color:var(--green);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase}
+.demo-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.demo-meta .demo-badge{display:inline-block;padding:4px 10px;border-radius:99px;background:rgba(69,227,107,.12);border:1px solid rgba(69,227,107,.3);color:var(--green);font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.demo-meta small{color:var(--muted);font-size:.72rem;letter-spacing:.1em;font-weight:700}
+.demo-copy h3{margin:0 0 8px;font:400 clamp(1.35rem,1.8vw,1.7rem) var(--serif);color:var(--paper)}
+.demo-copy p{min-height:0;margin:0 0 16px;color:var(--muted);font-size:clamp(.8rem,.92vw,.84rem);line-height:1.65;flex:1}
+.demo-copy b{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:clamp(12px,1.5vw,18px);border-top:1px solid var(--line);color:var(--green);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;font-weight:700}
 .demo-copy svg{width:17px}
 @media(max-width:980px){.demo-heading{grid-template-columns:1fr;gap:28px}.demo-heading .kicker{grid-column:auto}.demo-image{aspect-ratio:16/9}}
 @media(prefers-reduced-motion:reduce){.demo-card,.demo-image img{transition:none}}

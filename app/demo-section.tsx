@@ -72,10 +72,12 @@ export default function DemoSection({ lang }: { lang: Lang }) {
       {projects.map((project, index) => <a className="demo-card" href={project.url} target="_blank" rel="noreferrer" key={project.name} aria-label={`${t.open}: ${project.name}`}>
         <div className="demo-image">
           <img src={project.image} alt={`${project.name} — ${t.badge}`} loading="lazy" />
-          <span>{t.badge}</span>
         </div>
         <div className="demo-copy">
-          <small>{String(index + 1).padStart(2, "0")}</small>
+          <div className="demo-meta">
+            <span className="demo-badge">{t.badge}</span>
+            <small>{String(index + 1).padStart(2, "0")}</small>
+          </div>
           <h3>{project.name}</h3>
           <p>{t.descriptions[index]}</p>
           <b>{t.open}<Arrow /></b>
