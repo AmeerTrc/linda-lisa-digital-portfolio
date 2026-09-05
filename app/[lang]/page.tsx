@@ -8,14 +8,14 @@ type Lang = (typeof languages)[number];
 
 const seo = {
   pt: {
-    title: "Desconhecido — Relacionamento com Clientes | Desconhecido",
-    description: "Desconhecido atua no relacionamento com clientes e desenvolvimento de negócios na AmeerTrc em São Paulo.",
+    title: "Linda Lisa — Relacionamento com Clientes | Linda Lisa",
+    description: "Linda Lisa atua no relacionamento com clientes e desenvolvimento de negócios na AmeerTrc em São Paulo.",
     locale: "pt_BR",
     role: "Relacionamento com Clientes e Desenvolvimento de Negócios",
   },
   en: {
-    title: "Unknown — Client Relations | Unknown",
-    description: "Unknown supports client relations and business development at AmeerTrc in São Paulo.",
+    title: "Linda Lisa — Client Relations | Linda Lisa",
+    description: "Linda Lisa supports client relations and business development at AmeerTrc in São Paulo.",
     locale: "en_US",
     role: "Client Relations and Business Development",
   },
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: current.title,
       description: current.description,
       url: `${siteUrl}/${lang}`,
-      siteName: "Desconhecido",
+      siteName: "Linda Lisa",
       type: "profile",
       locale: current.locale,
     },
@@ -59,7 +59,7 @@ export default async function LanguagePage({ params }: { params: Promise<{ lang:
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: `${siteUrl}/`,
-        name: lang === "pt" ? "Desconhecido" : "Unknown",
+        name: "Linda Lisa",
         inLanguage: ["pt-BR", "en"],
       },
       {
@@ -71,7 +71,7 @@ export default async function LanguagePage({ params }: { params: Promise<{ lang:
       {
         "@type": "Person",
         "@id": `${siteUrl}/#linda-lisa`,
-        name: lang === "pt" ? "Desconhecido" : "Unknown",
+        name: "Linda Lisa",
         url: pageUrl,
         jobTitle: current.role,
         worksFor: { "@id": "https://www.ameertrc.com/#organization" },
