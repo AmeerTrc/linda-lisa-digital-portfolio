@@ -6,15 +6,15 @@ import "./photo.css";
 const siteUrl = process.env.RAILWAY_PUBLIC_DOMAIN ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}` : "https://linda-lisa-digital-portfolio-production.up.railway.app";
 export const metadata:Metadata={
  metadataBase:new URL(siteUrl),
- title:"Linda Lisa — Client Relations & Business Development",
- description:"Linda Lisa supports client relations and business development at AmeerTrc in São Paulo.",
+ title:"Larissa Becker — Client Relations & Business Development",
+ description:"Larissa Becker supports client relations and business development at AmeerTrc in São Paulo.",
  alternates:{canonical:"/"},
  robots:{index:true,follow:true,googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}},
  openGraph:{
-  title:"Linda Lisa — Client Relations & Business Development",
-  description:"Linda Lisa supports client relations and business development at AmeerTrc in São Paulo.",
+  title:"Larissa Becker — Client Relations & Business Development",
+  description:"Larissa Becker supports client relations and business development at AmeerTrc in São Paulo.",
   url:siteUrl,
-  siteName:"Linda Lisa",
+  siteName:"Larissa Becker",
   type:"website",
   locale:"pt_BR"
  },

@@ -8,14 +8,14 @@ type Lang = (typeof languages)[number];
 
 const seo = {
   pt: {
-    title: "Linda Lisa — Relacionamento com Clientes | Linda Lisa",
-    description: "Linda Lisa atua no relacionamento com clientes e desenvolvimento de negócios na AmeerTrc em São Paulo.",
+    title: "Larissa Becker — Relacionamento com Clientes | Larissa Becker",
+    description: "Larissa Becker atua no relacionamento com clientes e desenvolvimento de negócios na AmeerTrc em São Paulo.",
     locale: "pt_BR",
     role: "Relacionamento com Clientes e Desenvolvimento de Negócios",
   },
   en: {
-    title: "Linda Lisa — Client Relations | Linda Lisa",
-    description: "Linda Lisa supports client relations and business development at AmeerTrc in São Paulo.",
+    title: "Larissa Becker — Client Relations | Larissa Becker",
+    description: "Larissa Becker supports client relations and business development at AmeerTrc in São Paulo.",
     locale: "en_US",
     role: "Client Relations and Business Development",
   },
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: current.title,
       description: current.description,
       url: `${siteUrl}/${lang}`,
-      siteName: "Linda Lisa",
+      siteName: "Larissa Becker",
       type: "profile",
       locale: current.locale,
     },
@@ -59,7 +59,7 @@ export default async function LanguagePage({ params }: { params: Promise<{ lang:
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: `${siteUrl}/`,
-        name: "Linda Lisa",
+        name: "Larissa Becker",
         inLanguage: ["pt-BR", "en"],
       },
       {
@@ -70,8 +70,8 @@ export default async function LanguagePage({ params }: { params: Promise<{ lang:
       },
       {
         "@type": "Person",
-        "@id": `${siteUrl}/#linda-lisa`,
-        name: "Linda Lisa",
+        "@id": `${siteUrl}/#larissa-becker`,
+        name: "Larissa Becker",
         url: pageUrl,
         jobTitle: current.role,
         worksFor: { "@id": "https://www.ameertrc.com/#organization" },
@@ -85,7 +85,7 @@ export default async function LanguagePage({ params }: { params: Promise<{ lang:
         name: current.title,
         description: current.description,
         inLanguage: lang === "pt" ? "pt-BR" : "en",
-        mainEntity: { "@id": `${siteUrl}/#linda-lisa` },
+        mainEntity: { "@id": `${siteUrl}/#larissa-becker` },
         isPartOf: { "@id": `${siteUrl}/#website` },
       },
     ],
